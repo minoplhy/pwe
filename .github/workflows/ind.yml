@@ -8,7 +8,6 @@ jobs:
       - uses: minoplhy/ups2@v1.2
         with:
           site: "kylz.nl"
-
     - name: Pushes
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
