@@ -11,7 +11,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         site: "kylz.nl"
-        source_file: '$home/docs/index.html'
+        source_file: '/index.html'
         destination_repo: 'minoplhy/alive-test'
         destination_folder: 'html'
         user_email: 'what@m21.kylz.nl'
