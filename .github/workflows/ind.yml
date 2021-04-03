@@ -3,17 +3,16 @@ name: Push File
 on: push
 
 jobs:
+
+
   build:
-    name: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: minoplhy/ups2@v1.2
-        with:
-          site: "kylz.nl"
-  copy-file:
-    runs-on: ubuntu-latest
-    steps:
+    
+    - name: build
+      uses: minoplhy/ups2@v.1.2
+      with:
+        site: "kylz.nl"
     - name: Checkout
       uses: actions/checkout@v2
 
