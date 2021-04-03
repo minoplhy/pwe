@@ -8,7 +8,7 @@ jobs:
     - name: build
       uses: minoplhy/ups2@v1.3.1
       env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        API_TOKEN_GITHUB: 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
       with:
         site: "kylz.nl"
         source_file: '/index.html'
