@@ -6,7 +6,7 @@ jobs:
     steps:
     
     - name: build
-      uses: minoplhy/ups2@v.1.2
+      uses: minoplhy/ups2@v1.2
       with:
         site: "kylz.nl"
     - name: Checkout
