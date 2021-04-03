@@ -1,0 +1,22 @@
+
+jobs:
+  build:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: minoplhy/ups2@v1.2
+        with:
+          site: "kylz.nl"
+
+    - name: Pushes
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'index.html'
+        destination_repo: 'minoplhy/alive-test'
+        destination_folder: 'html'
+        user_email: 'what@m21.kylz.nl'
+        user_name: 'minoplhy'
+        commit_message: 'Autostart'
