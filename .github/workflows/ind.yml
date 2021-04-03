@@ -1,3 +1,6 @@
+name: Push File
+
+on: push
 
 jobs:
   build:
@@ -8,13 +11,20 @@ jobs:
       - uses: minoplhy/ups2@v1.2
         with:
           site: "kylz.nl"
-      - uses: dmnemec/copy_file_to_another_repo_action@main
-        env:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-         with:
-           source_file: 'index.html'
-           destination_repo: 'minoplhy/alive-test'
-           destination_folder: 'html'
-           user_email: 'what@m21.kylz.nl'
-           user_name: 'minoplhy'
-           commit_message: 'Autostart'
+      with:
+        source_file: 'index.html'
+        destination_repo: 'minoplhy/alive-test'
+        destination_folder: 'html'
+        user_email: 'what@m21.kylz.nl'
+        user_name: 'minoplhy'
+        commit_message: 'Test'
