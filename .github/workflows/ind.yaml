@@ -4,7 +4,11 @@ on:
   schedule:
   - cron: '*/5 * * * *'
   issues:
+  - comment: '!get status'
     types: [opened]
+  issue_comment:
+  - comment: '!status'
+    types: [created]
 jobs:
   build:
     runs-on: ubuntu-latest
