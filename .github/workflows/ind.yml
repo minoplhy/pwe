@@ -1,4 +1,4 @@
-name: Push File
+name: Web status
 on:
   schedule:
   - cron: "*/5 * * * *"
