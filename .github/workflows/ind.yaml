@@ -3,9 +3,8 @@ on:
   push:
   schedule:
   - cron: '*/5 * * * *'
-  issue_comment:
-  - comment: '!status'
-    types: [created]
+  issues:
+     types: [opened]
 jobs:
   build:
     runs-on: ubuntu-latest
