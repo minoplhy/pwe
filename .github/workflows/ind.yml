@@ -6,7 +6,7 @@ jobs:
     steps:
     
     - name: build
-      uses: minoplhy/ups2@1.3.2
+      uses: minoplhy/ups2@1.3.3
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_KEY }}
       with:
