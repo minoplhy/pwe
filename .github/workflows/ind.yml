@@ -13,7 +13,7 @@ jobs:
         site: "kylz.nl"
         source_file: '/index.html'
         destination_repo: 'minoplhy/alive-test'
-        destination_folder: 'html'
+        destination_folder: 'docs'
         user_email: 'what@m21.kylz.nl'
         user_name: 'Builder'
         commit_message: 'Updated status'
