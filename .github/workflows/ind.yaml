@@ -5,13 +5,15 @@ on:
   - cron: '*/5 * * * *'
   issues:
      types: [opened]
+  issue_comment:
+    types: [created]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     
     - name: build
-      uses: minoplhy/ups2@v1.3.5-i
+      uses: minoplhy/ups2@v1.3.5-j
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_KEY }}
       with:
