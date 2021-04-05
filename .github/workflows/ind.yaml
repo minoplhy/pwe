@@ -9,7 +9,7 @@ on:
     types: [created]
 jobs:
   build:
-    runs-on: uka-uka
+    runs-on: ubuntu-lastest
     steps:
     
     - name: build
