@@ -14,14 +14,13 @@ jobs:
     steps:
     
     - name: build
-      uses: minoplhy/ups2@v1.3.9
+      uses: minoplhy/ups2@v1.3.8
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_KEY }}
       with:
         site: "https://kylz.nl"
         site2: "https://crappy.kylz.nl"
         site3: "https://m21.kylz.nl"
-        site4: "https://baka.kylz.nl"
         source_file: '/index.html'
         destination_repo: 'minoplhy/alive-test'
         destination_folder: 'docs'
