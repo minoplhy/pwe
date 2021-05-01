@@ -24,7 +24,7 @@ jobs:
         source_file: '/index.html'
         destination_repo: 'minoplhy/alive-test'
         destination_folder: 'docs'
-        user_email: 'zebr@m21.kylz.nl'
+        user_email: 'hurbar@m21.kylz.nl'
         user_name: 'Builder'
         commit_message: 'Updated status'
     - name: Checkout
